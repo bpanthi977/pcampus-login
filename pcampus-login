@@ -3,5 +3,5 @@
 USER=####
 PASSWORD=####
 if ( [ "$2" = "up" ] || [ "$2" == "dhcp4-change" ] ) && [ "$1" = "enp4s0" ]; then 
-	curl -d "mode=191&a=1516123481544&producttype=0&username=$USER&password=$PASSWORD" http://10.100.1.1:8090/login.xml 
+	curl -d "mode=191&username=$USER&password=$PASSWORD" http://10.100.1.1:8090/login.xml 
 fi
